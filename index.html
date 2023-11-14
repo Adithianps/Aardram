@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Aadram Food Donation Drive</title>
+    <style>
+        body {
+            background-image: url('background_image_placeholder.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Adjust text color based on your background image */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Aadram Food Donation Drive</h1>
+        <div class="options">
+            <button onclick="redirectToGoogleForm()">I am willing to donate food</button>
+            <button onclick="showFundForm()">I can help with funds</button>
+        </div>
+        <div id="donateForm" class="form-container">
+            <h2>Donate Food</h2>
+            <form id="foodForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="class">Class:</label>
+                <input type="text" id="class" name="class" required>
+                <button type="submit">Submit</button>
+            </form>
+            <p>Thank you for contributing to our food donation drive. Your generosity makes a difference!</p>
+        </div>
+        <div id="fundForm" class="form-container">
+            <h2>Help with Funds</h2>
+            <p>Scan the QR code to make a payment using UPI</p>
+            <!-- Placeholder for QR code image -->
+            <img src="qr_code.png" alt="QR Code" style="max-width: 100%;">
+        </div>
+        <div class="quotes">
+            <h3>Food Donation Quotes:</h3>
+            <p>"The simplest acts of kindness are by far more powerful than a thousand heads bowing in prayer." - Mahatma Gandhi</p>
+            <p>"No one has ever become poor by giving." - Anne Frank</p>
+            <p>"The food you donate today will put a smile on someone's face tomorrow."</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
